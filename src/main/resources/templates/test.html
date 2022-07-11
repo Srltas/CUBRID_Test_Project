@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<!-- Bulma CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+	
+	<title>test_view</title>
+</head>
+<body>
+	<div class="row">
+	<div class="col-lg-9">
+	</div>
+	<div class="col-lg-3">
+		<div class="tabs tabs-vertical tabs-right tabs-navigation tabs-navigation-simple">
+			<aside class="sidebar mt-2">
+				<div class="header"><h5 class="font-weight-bold" style="font-size:18px">착용 기록</h5></div>
+				<div class="content">
+				</div>
+				<div class="footer">
+					<button type="button" class="btn btn-primary mb-2" onclick="changeMarker('all')">전체보기 </button>&nbsp;&nbsp;&nbsp;
+					<button type="button" class="btn btn-secondary mb-2" onclick="changeMarker('red')">미착용 보기</button>
+				</div>
+			</aside>
+		</div>
+	</div>
+</div>
+</body>
+</html>

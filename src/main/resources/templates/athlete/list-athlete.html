@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Bulma CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+		
+		<title>Employee Directory</title>
+	</head>
+	<body>
+	<div class="container">		
+			<h3>Athlete List</h3>
+			<hr>
+			
+			<progress class="progress is-success" value="30" max="100"></progress>
+			
+			<table class="table table-bordered table-striped">
+				<thead class="table-dark">
+					<tr>
+						<th>Code</th>
+						<th>Name</th>
+						<th>Gender</th>
+						<th>Nation Code</th>
+						<th>Event</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr th:each="athlete : ${athleteList}">
+						<td th:text="${athlete.code}"></td>
+						<td th:text="${athlete.name}"></td>
+						<td th:text="${athlete.gender}"></td>
+						<td th:text="${athlete.nationCode}"></td>
+						<td th:text="${athlete.event}"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
